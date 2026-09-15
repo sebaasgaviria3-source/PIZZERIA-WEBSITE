@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title-goiabada">
+  <title id="title-goiabada">Ilustración provisional: pizza de goiabada (guayaba) con queso</title>
+  <defs>
+    <radialGradient id="crustG" cx="50%" cy="45%" r="65%">
+      <stop offset="78%" stop-color="#e7b85c"/>
+      <stop offset="100%" stop-color="#c8892f"/>
+    </radialGradient>
+    <radialGradient id="cheeseG" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#fbe7ad"/>
+      <stop offset="100%" stop-color="#f0c14b"/>
+    </radialGradient>
+  </defs>
+  <circle cx="200" cy="200" r="192" fill="url(#crustG)"/>
+  <circle cx="200" cy="200" r="164" fill="url(#cheeseG)"/>
+  <g opacity="0.35" fill="#c8892f">
+    <circle cx="120" cy="90" r="3"/><circle cx="260" cy="100" r="2.5"/><circle cx="90" cy="220" r="3"/>
+    <circle cx="300" cy="230" r="2.5"/><circle cx="150" cy="300" r="3"/><circle cx="250" cy="290" r="2.5"/>
+    <circle cx="200" cy="80" r="2"/><circle cx="320" cy="170" r="2.5"/>
+  </g>
+  <g transform="translate(200,200)">
+    <rect x="-95" y="-24" width="190" height="48" rx="10" fill="#a83226" transform="rotate(45)"/>
+    <rect x="-95" y="-24" width="190" height="48" rx="10" fill="#b8382c" transform="rotate(-45)"/>
+  </g>
+  <g fill="#e8792e" opacity="0.85">
+    <circle cx="70" cy="150" r="4"/><circle cx="330" cy="140" r="4"/><circle cx="80" cy="280" r="4"/>
+    <circle cx="320" cy="270" r="4"/><circle cx="200" cy="345" r="4"/><circle cx="200" cy="55" r="4"/>
+  </g>
+  <circle cx="200" cy="200" r="192" fill="none" stroke="#00000014" stroke-width="2"/>
+</svg>
