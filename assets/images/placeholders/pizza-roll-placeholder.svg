@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="title-roll">
+  <title id="title-roll">Ilustración provisional: rocambole de pizza con jamón y queso</title>
+  <rect x="0" y="0" width="400" height="300" rx="24" fill="#221d1a"/>
+  <g>
+    <circle cx="70" cy="150" r="58" fill="#e7b85c"/>
+    <circle cx="150" cy="150" r="58" fill="#e7b85c"/>
+    <circle cx="230" cy="150" r="58" fill="#e7b85c"/>
+    <circle cx="310" cy="150" r="58" fill="#e7b85c"/>
+  </g>
+  <g fill="#f5e7c4">
+    <circle cx="70" cy="150" r="46"/><circle cx="150" cy="150" r="46"/>
+    <circle cx="230" cy="150" r="46"/><circle cx="310" cy="150" r="46"/>
+  </g>
+  <g fill="#d98a8f" opacity="0.9">
+    <path d="M40 150a30 30 0 0 1 60 0z"/>
+    <path d="M120 150a30 30 0 0 1 60 0z"/>
+    <path d="M200 150a30 30 0 0 1 60 0z"/>
+    <path d="M280 150a30 30 0 0 1 60 0z"/>
+  </g>
+  <g fill="#fbf3de" opacity="0.85">
+    <path d="M40 150a30 30 0 0 0 60 0z"/>
+    <path d="M120 150a30 30 0 0 0 60 0z"/>
+    <path d="M200 150a30 30 0 0 0 60 0z"/>
+    <path d="M280 150a30 30 0 0 0 60 0z"/>
+  </g>
+  <g fill="#8c3226" opacity="0.55">
+    <circle cx="70" cy="120" r="3"/><circle cx="150" cy="124" r="3"/><circle cx="230" cy="118" r="3"/><circle cx="310" cy="122" r="3"/>
+  </g>
+</svg>

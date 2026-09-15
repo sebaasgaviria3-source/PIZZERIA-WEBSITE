@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Nossa Pizza | Pizzería artesanal de inspiración brasileña</title>
+<meta name="description" content="Nossa Pizza: pizzas artesanales elaboradas por pizzeros brasileños con ingredientes frescos y seleccionados. Sabor auténtico de Brasil, hecho con pasión. Pide ahora o consulta nuestro menú.">
+<meta name="keywords" content="Nossa Pizza, pizzería brasileña, pizza de calabresa, pizza de goiabada, pizza artesanal, pizzeros brasileños, pedir pizza a domicilio">
+<meta name="author" content="Nossa Pizza">
+<meta name="theme-color" content="#16324a">
+<link rel="canonical" href="https://www.nossapizza.example/"><!-- EDITAR: sustituir por el dominio definitivo -->
+
+<!-- Open Graph / redes sociales -->
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:site_name" content="Nossa Pizza">
+<meta property="og:title" content="Nossa Pizza | El sabor de Brasil, hecho con pasión">
+<meta property="og:description" content="Pizzas artesanales elaboradas por pizzeros brasileños con ingredientes frescos y seleccionados.">
+<meta property="og:image" content="assets/images/placeholders/og-image-placeholder.svg"><!-- EDITAR: sustituir por foto real 1200x630 -->
+<meta property="og:url" content="https://www.nossapizza.example/">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nossa Pizza | El sabor de Brasil, hecho con pasión">
+<meta name="twitter:description" content="Pizzas artesanales elaboradas por pizzeros brasileños con ingredientes frescos y seleccionados.">
+<meta name="twitter:image" content="assets/images/placeholders/og-image-placeholder.svg">
+
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="apple-touch-icon" href="assets/images/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Datos estructurados para SEO local. EDITAR con los datos reales del restaurante. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Nossa Pizza",
+  "servesCuisine": ["Pizza", "Brasileña", "Italiana"],
+  "description": "Pizzería artesanal de inspiración brasileña. Pizzas elaboradas con ingredientes frescos y seleccionados.",
+  "image": "assets/images/placeholders/og-image-placeholder.svg",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "[EDITAR: calle y número]",
+    "addressLocality": "[EDITAR: ciudad]",
+    "postalCode": "[EDITAR: código postal]",
+    "addressCountry": "[EDITAR: país]"
+  },
+  "telephone": "[EDITAR: teléfono]",
+  "sameAs": []
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+<!-- ===================== HEADER / NAV ===================== -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#inicio" class="logo" aria-label="Nossa Pizza — inicio">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="34" height="34"><path d="M32 8l22 44H10z" fill="#f0c14b"/><circle cx="27" cy="26" r="3" fill="#b8382c"/><circle cx="37" cy="30" r="2.6" fill="#b8382c"/><circle cx="32" cy="38" r="2.8" fill="#b8382c"/></svg>
+      </span>
+      <span class="logo-text"><span class="logo-nossa">Nossa</span><span class="logo-pizza">Pizza</span></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#pizzas">Pizzas</a></li>
+        <li><a href="#calidad">Calidad</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#pedidos" class="btn btn-primary btn-sm">Pedir ahora</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="inicio">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy reveal">
+      <p class="eyebrow"><span class="flag-dot" aria-hidden="true"></span>Inspiración brasileña, hecha a mano</p>
+      <h1>El sabor de <span class="accent">Brasil</span>, hecho con pasión</h1>
+      <p class="hero-lead">Pizzas artesanales elaboradas por pizzeros brasileños, con ingredientes frescos, seleccionados y mucho cariño por la buena mesa. Cada porción cuenta una historia.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn btn-outline-light">Ver menú</a>
+        <a href="#pedidos" class="btn btn-primary">Pedir ahora</a>
+      </div>
+      <ul class="hero-badges" aria-label="Nuestros valores">
+        <li>🍕 Masa artesanal</li>
+        <li>🌿 Ingredientes frescos</li>
+        <li>🇧🇷 Receta brasileña</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual reveal" style="--delay:120ms">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <img class="hero-pizza" src="assets/images/placeholders/pizza-goiabada-placeholder.svg" alt="Pizza Nossa Pizza de goiabada (guayaba) y queso, receta brasileña — foto provisional, sustituir por fotografía real" width="440" height="440" fetchpriority="high">
+      <div class="hero-sticker" aria-hidden="true">
+        <img src="assets/images/placeholders/mascot-placeholder.svg" alt="" width="72" height="72">
+        <span>100% artesanal</span>
+      </div>
+    </div>
+  </div>
+  <a href="#historia" class="scroll-hint" aria-label="Desplázate para descubrir más">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===================== NUESTRA HISTORIA ===================== -->
+<section class="section section-dark" id="historia">
+  <div class="container split">
+    <div class="split-visual reveal">
+      <img src="assets/images/placeholders/mascot-placeholder.svg" alt="Ilustración de nuestro pizzero, chef de origen brasileño al frente de Nossa Pizza — imagen provisional, sustituir por fotografía real del equipo" width="320" height="352" loading="lazy" class="mascot-frame">
+      <div class="split-badge">
+        <span class="flag-dot" aria-hidden="true"></span> Pizzeros brasileños
+      </div>
+    </div>
+    <div class="split-copy reveal" style="--delay:120ms">
+      <p class="eyebrow">Nuestra historia</p>
+      <h2>Una tradición brasileña, amasada con las manos</h2>
+      <p>Nossa Pizza nació de una idea sencilla: llevar a la mesa la pizza tal y como la entendemos en Brasil, con masas de fermentación cuidada, ingredientes bien elegidos y ese punto de generosidad que solo da cocinar para la gente que quieres.</p>
+      <p>Detrás de cada pizza hay pizzeros de origen brasileño que crecieron entre hornos de barrio, hornos familiares y la costumbre de reunir a todos alrededor de la mesa. Trajeron con ellos esa forma de trabajar la masa, de elegir cada ingrediente y de no dar una pizza por terminada hasta que sabe como debe saber.</p>
+      <p>No buscamos ser los más grandes, sino los más honestos con lo que hacemos: trabajo, paciencia y cariño por la buena comida, receta a receta.</p>
+      <ul class="story-points">
+        <li><strong>Trabajo.</strong> Cada pizza se prepara con calma, sin atajos.</li>
+        <li><strong>Familia.</strong> Recetas que se transmiten y se cuidan.</li>
+        <li><strong>Pasión.</strong> Por Brasil, por la pizza y por quien la come.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NUESTRAS PIZZAS ===================== -->
+<section class="section" id="pizzas">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Nuestras pizzas</p>
+      <h2>Las protagonistas de la mesa</h2>
+      <p class="section-lead">Tres recetas que representan lo que somos: tradición italiana con acento brasileño.</p>
+    </header>
+
+    <div class="pizza-grid">
+      <article class="pizza-card reveal">
+        <div class="pizza-card-media">
+          <img src="assets/images/placeholders/pizza-goiabada-placeholder.svg" alt="Pizza de goiabada (dulce de guayaba brasileño) y queso mozzarella, con hojuelas de chile — foto provisional" width="400" height="400" loading="lazy">
+        </div>
+        <div class="pizza-card-body">
+          <h3>Pizza de Goiabada com Queijo</h3>
+          <p class="pizza-ingredients">Mozzarella, goiabada (dulce de guayaba brasileño), queso parmesano y hojuelas de chile.</p>
+          <p class="pizza-desc">La combinación dulce-salada más querida de Brasil: mozzarella fundida coronada con finas láminas de goiabada y un toque picante que despierta el paladar.</p>
+          <div class="pizza-card-foot">
+            <span class="price" data-editable>[Precio pendiente]</span>
+            <a href="#pedidos" class="btn btn-sm btn-outline">Pedir</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pizza-card reveal" style="--delay:100ms">
+        <div class="pizza-card-media">
+          <img src="assets/images/placeholders/pizza-calabresa-placeholder.svg" alt="Pizza de calabresa (embutido ahumado brasileño) con cebolla y queso mozzarella — foto provisional" width="400" height="400" loading="lazy">
+        </div>
+        <div class="pizza-card-body">
+          <h3>Pizza de Calabresa com Cebola</h3>
+          <p class="pizza-ingredients">Salsa de tomate, mozzarella, calabresa en rodajas y cebolla fresca en rodajas finas.</p>
+          <p class="pizza-desc">La clásica indiscutible de cualquier pizzería brasileña: calabresa jugosa y cebolla fresca sobre una generosa base de queso derretido.</p>
+          <div class="pizza-card-foot">
+            <span class="price" data-editable>[Precio pendiente]</span>
+            <a href="#pedidos" class="btn btn-sm btn-outline">Pedir</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="pizza-card reveal" style="--delay:200ms">
+        <div class="pizza-card-media pizza-card-media--wide">
+          <img src="assets/images/placeholders/pizza-roll-placeholder.svg" alt="Rocambole de pizza relleno de jamón y queso mozzarella, gratinado — foto provisional" width="400" height="300" loading="lazy">
+        </div>
+        <div class="pizza-card-body">
+          <h3>Rocambole de Pizza — Jamón y Queso</h3>
+          <p class="pizza-ingredients">Masa artesanal enrollada, jamón, mozzarella, orégano, hojuelas de chile, aceite de oliva y albahaca fresca.</p>
+          <p class="pizza-desc">Nuestra masa enrollada y rellena de jamón y mozzarella fundida, horneada hasta dorar y servida en porciones para compartir.</p>
+          <div class="pizza-card-foot">
+            <span class="price" data-editable>[Precio pendiente]</span>
+            <a href="#pedidos" class="btn btn-sm btn-outline">Pedir</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="pizza-grid-note reveal">Estamos ampliando nuestra carta con nuevos sabores. <a href="#menu">Consulta el menú completo</a>.</p>
+  </div>
+</section>
+
+<!-- ===================== CALIDAD E INGREDIENTES ===================== -->
+<section class="section section-charcoal" id="calidad">
+  <div class="container split split-reverse">
+    <div class="split-copy reveal">
+      <p class="eyebrow">Calidad e ingredientes</p>
+      <h2>Todo comienza con buenos ingredientes</h2>
+      <p>Creemos que una gran pizza se decide antes de llegar al horno. Por eso cuidamos cada paso: una masa de fermentación lenta, mozzarella de calidad, embutidos y quesos seleccionados, y productos como la goiabada que dan a nuestras recetas su carácter brasileño.</p>
+      <p>Cortamos, seleccionamos y preparamos con atención al detalle, porque el sabor final depende de decisiones que se toman mucho antes de servir la mesa.</p>
+      <ul class="quality-list">
+        <li><span aria-hidden="true">🌾</span> Masa de fermentación cuidada, amasada a diario</li>
+        <li><span aria-hidden="true">🧀</span> Mozzarella y quesos seleccionados</li>
+        <li><span aria-hidden="true">🍅</span> Ingredientes frescos, preparados cada día</li>
+        <li><span aria-hidden="true">🔥</span> Horneado en su punto exacto</li>
+      </ul>
+    </div>
+    <div class="split-visual reveal quality-visual" style="--delay:120ms">
+      <div class="quality-disc pizza-disc pizza-disc--calabresa" role="img" aria-label="Detalle de ingredientes: calabresa, cebolla y queso — composición provisional"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== POR QUÉ ELEGIRNOS ===================== -->
+<section class="section" id="porque-elegirnos">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">¿Por qué elegirnos?</p>
+      <h2>Razones para volver, receta tras receta</h2>
+    </header>
+    <div class="why-grid">
+      <div class="why-card reveal"><span class="why-icon" aria-hidden="true">🍕</span><h3>Sabor auténtico</h3><p>Recetas fieles a la forma de hacer pizza en Brasil, sin atajos.</p></div>
+      <div class="why-card reveal" style="--delay:60ms"><span class="why-icon" aria-hidden="true">🌿</span><h3>Ingredientes frescos</h3><p>Seleccionamos y preparamos cada ingrediente con cuidado.</p></div>
+      <div class="why-card reveal" style="--delay:120ms"><span class="why-icon" aria-hidden="true">🇧🇷</span><h3>Inspiración brasileña</h3><p>Sabores y combinaciones que vienen directamente de Brasil.</p></div>
+      <div class="why-card reveal" style="--delay:180ms"><span class="why-icon" aria-hidden="true">👨‍🍳</span><h3>Pizzeros apasionados</h3><p>Un equipo que disfruta lo que hace y se nota en cada porción.</p></div>
+      <div class="why-card reveal" style="--delay:240ms"><span class="why-icon" aria-hidden="true">❤️</span><h3>Hecho con dedicación</h3><p>Cada pizza se prepara con la misma atención, siempre.</p></div>
+      <div class="why-card reveal" style="--delay:300ms"><span class="why-icon" aria-hidden="true">⭐</span><h3>Calidad en cada pizza</h3><p>Cuidamos el detalle desde la masa hasta el último corte.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALERÍA ===================== -->
+<section class="section section-dark" id="galeria">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Galería</p>
+      <h2>Un vistazo a Nossa Pizza</h2>
+      <p class="section-lead">Iremos sumando fotografías de nuestras pizzas, ingredientes, preparación, equipo y local.</p>
+    </header>
+
+    <div class="gallery-grid" id="gallery-grid">
+      <button class="gallery-item reveal" data-full="assets/images/placeholders/pizza-goiabada-placeholder.svg" data-caption="Pizza de goiabada y queso">
+        <img src="assets/images/placeholders/pizza-goiabada-placeholder.svg" alt="Pizza de goiabada y queso — foto provisional" loading="lazy" width="400" height="400">
+        <span class="gallery-caption">Pizza de goiabada y queso</span>
+      </button>
+      <button class="gallery-item reveal" style="--delay:60ms" data-full="assets/images/placeholders/mascot-placeholder.svg" data-caption="Nuestro chef, corazón de Nossa Pizza">
+        <img src="assets/images/placeholders/mascot-placeholder.svg" alt="Nuestro chef, corazón de Nossa Pizza — ilustración provisional" loading="lazy" width="400" height="400">
+        <span class="gallery-caption">Nuestro chef</span>
+      </button>
+      <button class="gallery-item reveal" style="--delay:120ms" data-full="assets/images/placeholders/logo-lockup-placeholder.svg" data-caption="Identidad Nossa Pizza">
+        <img src="assets/images/placeholders/logo-lockup-placeholder.svg" alt="Identidad de marca Nossa Pizza — imagen provisional" loading="lazy" width="400" height="400">
+        <span class="gallery-caption">Nossa Pizza</span>
+      </button>
+      <button class="gallery-item reveal" style="--delay:180ms" data-full="assets/images/placeholders/pizza-roll-placeholder.svg" data-caption="Rocambole de jamón y queso">
+        <img src="assets/images/placeholders/pizza-roll-placeholder.svg" alt="Rocambole de pizza con jamón y queso — foto provisional" loading="lazy" width="400" height="300">
+        <span class="gallery-caption">Rocambole de jamón y queso</span>
+      </button>
+      <button class="gallery-item reveal" style="--delay:240ms" data-full="assets/images/placeholders/pizza-calabresa-placeholder.svg" data-caption="Pizza de calabresa con cebolla">
+        <img src="assets/images/placeholders/pizza-calabresa-placeholder.svg" alt="Pizza de calabresa con cebolla — foto provisional" loading="lazy" width="400" height="400">
+        <span class="gallery-caption">Pizza de calabresa con cebolla</span>
+      </button>
+      <div class="gallery-item gallery-item--empty reveal" style="--delay:300ms">
+        <span aria-hidden="true">＋</span>
+        <span>Añade más fotos: local, equipo, preparación…</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MENÚ ===================== -->
+<section class="section" id="menu">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Menú</p>
+      <h2>Nuestra carta</h2>
+      <p class="section-lead">Los precios marcados como <span class="price" data-editable>[Precio]</span> están pendientes de confirmar.</p>
+    </header>
+
+    <div class="menu-tabs">
+      <div class="menu-category reveal">
+        <h3 class="menu-category-title">Pizzas</h3>
+        <ul class="menu-list">
+          <li class="menu-row">
+            <div><span class="menu-item-name">Pizza de Goiabada com Queijo</span><span class="menu-item-desc">Mozzarella, goiabada, parmesano, hojuelas de chile</span></div>
+            <span class="price" data-editable>[Precio]</span>
+          </li>
+          <li class="menu-row">
+            <div><span class="menu-item-name">Pizza de Calabresa com Cebola</span><span class="menu-item-desc">Salsa de tomate, mozzarella, calabresa, cebolla</span></div>
+            <span class="price" data-editable>[Precio]</span>
+          </li>
+          <li class="menu-row menu-row--placeholder">
+            <div><span class="menu-item-name">[Nueva pizza]</span><span class="menu-item-desc">[Ingredientes por confirmar]</span></div>
+            <span class="price" data-editable>[Precio]</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-category reveal" style="--delay:80ms">
+        <h3 class="menu-category-title">Especialidades</h3>
+        <ul class="menu-list">
+          <li class="menu-row">
+            <div><span class="menu-item-name">Rocambole de Pizza — Jamón y Queso</span><span class="menu-item-desc">Masa enrollada, jamón, mozzarella, orégano, albahaca</span></div>
+            <span class="price" data-editable>[Precio]</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-category reveal" style="--delay:160ms">
+        <h3 class="menu-category-title">Bebidas</h3>
+        <ul class="menu-list">
+          <li class="menu-row menu-row--placeholder">
+            <div><span class="menu-item-name">[Bebida]</span><span class="menu-item-desc">[Descripción]</span></div>
+            <span class="price" data-editable>[Precio]</span>
+          </li>
+          <li class="menu-row menu-row--placeholder">
+            <div><span class="menu-item-name">[Bebida]</span><span class="menu-item-desc">[Descripción]</span></div>
+            <span class="price" data-editable>[Precio]</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-category reveal" style="--delay:240ms">
+        <h3 class="menu-category-title">Extras</h3>
+        <ul class="menu-list">
+          <li class="menu-row menu-row--placeholder">
+            <div><span class="menu-item-name">[Extra]</span><span class="menu-item-desc">[Descripción]</span></div>
+            <span class="price" data-editable>[Precio]</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PEDIDOS ===================== -->
+<section class="section pedidos-cta" id="pedidos">
+  <div class="container pedidos-inner reveal">
+    <p class="eyebrow eyebrow-light">Pide ahora</p>
+    <h2>Tu Nossa Pizza está a un clic</h2>
+    <p class="section-lead section-lead-light">Elige tu manera favorita de pedir. Muy pronto podrás hacerlo también desde tu app de delivery preferida.</p>
+
+    <div class="order-options">
+      <!-- EDITAR: sustituir 34600000000 por el número de WhatsApp real, sin espacios ni signos -->
+      <a class="order-btn" href="https://wa.me/34600000000?text=Hola%2C%20quiero%20hacer%20un%20pedido%20en%20Nossa%20Pizza" target="_blank" rel="noopener">
+        <span class="order-btn-icon" aria-hidden="true">💬</span>
+        <span>Pedir por WhatsApp</span>
+      </a>
+      <a class="order-btn" href="#menu">
+        <span class="order-btn-icon" aria-hidden="true">📋</span>
+        <span>Ver menú</span>
+      </a>
+      <span class="order-btn order-btn--pending" aria-disabled="true">
+        <span class="order-btn-icon" aria-hidden="true">🛵</span>
+        <span>Uber Eats <em>(próximamente)</em></span>
+      </span>
+      <span class="order-btn order-btn--pending" aria-disabled="true">
+        <span class="order-btn-icon" aria-hidden="true">🛵</span>
+        <span>Just Eat <em>(próximamente)</em></span>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section class="section section-dark" id="contacto">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Contacto</p>
+      <h2>Ven a vernos o escríbenos</h2>
+    </header>
+
+    <div class="contact-grid">
+      <ul class="contact-list reveal">
+        <li>
+          <span class="contact-icon" aria-hidden="true">📍</span>
+          <div><strong>Dirección</strong><p data-editable>[Editar: dirección de la pizzería]</p></div>
+        </li>
+        <li>
+          <span class="contact-icon" aria-hidden="true">📞</span>
+          <div><strong>Teléfono</strong><p data-editable>[Editar: número de teléfono]</p></div>
+        </li>
+        <li>
+          <span class="contact-icon" aria-hidden="true">💬</span>
+          <div><strong>WhatsApp</strong><p><a href="https://wa.me/34600000000" target="_blank" rel="noopener" data-editable>[Editar: enlace de WhatsApp]</a></p></div>
+        </li>
+        <li>
+          <span class="contact-icon" aria-hidden="true">🕒</span>
+          <div><strong>Horario</strong><p data-editable>[Editar: horario de apertura]</p></div>
+        </li>
+        <li>
+          <span class="contact-icon" aria-hidden="true">📷</span>
+          <div><strong>Redes sociales</strong>
+            <p class="social-links">
+              <a href="#" data-editable aria-label="Instagram de Nossa Pizza (enlace pendiente)">Instagram</a>
+              <a href="#" data-editable aria-label="Facebook de Nossa Pizza (enlace pendiente)">Facebook</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="contact-map reveal" style="--delay:100ms">
+        <div class="map-placeholder">
+          <span aria-hidden="true">🗺️</span>
+          <p>El mapa estará disponible en cuanto confirmemos la dirección del local.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-text"><span class="logo-nossa">Nossa</span><span class="logo-pizza">Pizza</span></span>
+      <p>El sabor de Brasil, hecho con pasión.</p>
+    </div>
+
+    <nav class="footer-col" aria-label="Enlaces del menú">
+      <h4>Menú</h4>
+      <ul>
+        <li><a href="#pizzas">Nuestras pizzas</a></li>
+        <li><a href="#menu">Carta completa</a></li>
+        <li><a href="#pedidos">Pedir ahora</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-label="Enlaces sobre la marca">
+      <h4>La marca</h4>
+      <ul>
+        <li><a href="#historia">Nuestra historia</a></li>
+        <li><a href="#calidad">Calidad e ingredientes</a></li>
+        <li><a href="#galeria">Galería</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li data-editable>[Editar: dirección]</li>
+        <li data-editable>[Editar: teléfono]</li>
+        <li data-editable>[Editar: horario]</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <div class="footer-social">
+        <a href="#" data-editable aria-label="Instagram (pendiente de enlazar)">IG</a>
+        <a href="#" data-editable aria-label="Facebook (pendiente de enlazar)">FB</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Nossa Pizza. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar imagen">&times;</button>
+  <figure>
+    <img id="lightbox-img" src="" alt="">
+    <figcaption id="lightbox-caption"></figcaption>
+  </figure>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

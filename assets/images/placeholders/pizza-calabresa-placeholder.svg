@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title-calabresa">
+  <title id="title-calabresa">Ilustración provisional: pizza de calabresa con cebolla</title>
+  <defs>
+    <radialGradient id="crustG2" cx="50%" cy="45%" r="65%">
+      <stop offset="78%" stop-color="#e7b85c"/>
+      <stop offset="100%" stop-color="#c8892f"/>
+    </radialGradient>
+    <radialGradient id="sauceG" cx="50%" cy="45%" r="62%">
+      <stop offset="0%" stop-color="#f4d98a"/>
+      <stop offset="100%" stop-color="#e8b944"/>
+    </radialGradient>
+  </defs>
+  <circle cx="200" cy="200" r="192" fill="url(#crustG2)"/>
+  <circle cx="200" cy="200" r="164" fill="url(#sauceG)"/>
+  <g fill="#8c3226">
+    <circle cx="140" cy="120" r="20"/><circle cx="230" cy="105" r="19"/><circle cx="290" cy="170" r="18"/>
+    <circle cx="120" cy="200" r="19"/><circle cx="200" cy="190" r="20"/><circle cx="270" cy="240" r="18"/>
+    <circle cx="150" cy="270" r="19"/><circle cx="230" cy="290" r="18"/><circle cx="180" cy="250" r="16"/>
+  </g>
+  <g fill="#6e2419" opacity="0.55">
+    <circle cx="140" cy="120" r="4"/><circle cx="230" cy="105" r="4"/><circle cx="290" cy="170" r="4"/>
+    <circle cx="120" cy="200" r="4"/><circle cx="200" cy="190" r="4"/><circle cx="270" cy="240" r="4"/>
+  </g>
+  <g fill="none" stroke="#faf5ec" stroke-width="7" opacity="0.9">
+    <ellipse cx="175" cy="150" rx="26" ry="13" transform="rotate(-15 175 150)"/>
+    <ellipse cx="255" cy="200" rx="24" ry="12" transform="rotate(20 255 200)"/>
+    <ellipse cx="165" cy="240" rx="25" ry="12" transform="rotate(-25 165 240)"/>
+    <ellipse cx="220" cy="130" rx="22" ry="11" transform="rotate(35 220 130)"/>
+  </g>
+  <circle cx="200" cy="200" r="192" fill="none" stroke="#00000014" stroke-width="2"/>
+</svg>
