@@ -200,7 +200,7 @@ button { font: inherit; cursor: pointer; }
 }
 .hero-bg {
   position: absolute;
-  inset: 0;
+  top: -60px; right: 0; bottom: -60px; left: 0;
   background:
     radial-gradient(circle at 82% 20%, rgba(184,92,56,0.28), transparent 55%),
     radial-gradient(circle at 12% 82%, rgba(74,44,32,0.55), transparent 55%),
@@ -845,11 +845,32 @@ button { font: inherit; cursor: pointer; }
 /* ---------- Reveal on scroll ---------- */
 .reveal {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  transform: translateY(28px) scale(0.97);
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
   transition-delay: var(--delay, 0ms);
 }
-.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.reveal.is-visible { opacity: 1; transform: translateY(0) scale(1); }
+
+/* ---------- Scroll progress bar ---------- */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  z-index: 300;
+  transform-origin: left center;
+  transform: scaleX(0);
+  background: linear-gradient(90deg, var(--gold), var(--orange));
+  will-change: transform;
+}
+
+/* Parallax wrapper: JS sets --parallax-y; falls back to 0 if unset */
+.parallax {
+  transform: translateY(var(--parallax-y, 0px));
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .parallax { transform: none !important; }
+}
 
 /* =========================================================
    Responsive
