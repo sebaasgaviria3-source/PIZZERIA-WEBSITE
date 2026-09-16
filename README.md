@@ -7,11 +7,14 @@ dependencias) listo para publicar en cualquier hosting estático.
 ## Estructura
 
 ```
-index.html              → toda la página (una sola página con secciones ancladas)
+index.html              → página principal (secciones ancladas)
+privacidad.html         → plantilla de política de privacidad (pendiente de redactar)
+terminos.html           → plantilla de términos y condiciones (pendiente de redactar)
 css/style.css           → estilos, paleta de marca, animaciones y responsive
 js/main.js              → menú móvil, animaciones al hacer scroll, galería con lightbox
-assets/images/          → imágenes del sitio
-assets/images/placeholders/ → ilustraciones provisionales (ver más abajo)
+js/cart.js              → filtros del menú, selector de tamaño/extras y carrito de compra
+assets/images/          → fotos reales de la marca
+assets/images/placeholders/ → ilustraciones provisionales para las fotos que aún faltan
 CONTENIDO-EDITABLE.md   → lista de todo lo que falta por confirmar (precios, fotos, contacto…)
 ```
 
@@ -27,17 +30,24 @@ python3 -m http.server 8000
 
 ## Secciones de la página
 
-Inicio → Nuestra historia → Nuestras pizzas → Calidad e ingredientes →
-Por qué elegirnos → Galería → Menú → Pedidos → Contacto → Pie de página.
+Inicio → Menú (con selección de tamaño/extras y carrito) → Nuestra historia
+→ Calidad e ingredientes → Por qué elegirnos → Galería → Opiniones →
+Pedidos → Contacto → Pie de página.
+
+## Funcionalidades
+
+- **Menú con carrito real**: cada pizza permite elegir tamaño y extras, ver
+  el precio en vivo, y añadirla a un carrito persistente (se guarda en el
+  navegador). El botón "Continuar al pedido por WhatsApp" genera un mensaje
+  con el resumen exacto del pedido.
+- **Filtros de categoría** en el menú (Todas / Clásicas / Especiales /
+  Especialidades), generados solo a partir de las pizzas reales.
+- Diseño responsive mobile-first, con menú hamburguesa, barra de pedido
+  fija en móvil y animaciones de aparición al hacer scroll.
 
 ## Pendiente de completar
 
-Las 5 imágenes de marca compartidas (pizza de goiabada, mascota chef,
-logotipo, rolls de jamón y queso, pizza de calabresa) se usaron como
-referencia de colores, tipografía y tono, pero no llegaron como archivos al
-repositorio, así que hoy la web usa ilustraciones vectoriales provisionales
-en `assets/images/placeholders/`. Lo mismo pasa con precios, dirección,
-teléfono, horario y redes sociales, que no se indicaron en el encargo.
-
-**Todo lo pendiente está documentado en [`CONTENIDO-EDITABLE.md`](./CONTENIDO-EDITABLE.md)**,
-con la ruta exacta de cada archivo y línea a editar.
+Precios, tamaños reales, dirección, teléfono, horario, redes sociales, las
+fotos de dos de las pizzas y el texto de las páginas legales siguen
+pendientes de confirmar. **Todo está documentado, con la ruta exacta de
+cada archivo, en [`CONTENIDO-EDITABLE.md`](./CONTENIDO-EDITABLE.md).**
