@@ -10,32 +10,46 @@ o un comentario `<!-- EDITAR: ... -->`, así que puedes buscarlos con Ctrl+F.
 
 ## 1. Fotografías
 
-Ya están integradas las 3 fotos reales que subiste:
+**Fotos reales de Nossa Pizza** (las que subiste tú, ya integradas):
 
 | Foto | Dónde se usa |
 |---|---|
-| `assets/images/pizza-goiabada.jpg` | Portada (hero), tarjeta de producto "Goiabada", galería, imagen para compartir en redes (Open Graph) |
+| `assets/images/pizza-goiabada.jpg` | Portada (hero), tarjeta "Goiabada" del menú, galería, imagen para compartir en redes (Open Graph) |
 | `assets/images/mascot-chef.jpg` | Sección "Nuestra historia", distintivo "100% artesanal" del hero, galería |
 | `assets/images/logo-nossa-pizza.jpg` | Galería (identidad de marca) |
 
-**Aún faltan** las fotos de la **pizza de calabresa** y del **rocambole de
-jamón y queso** — hoy usan ilustraciones vectoriales provisionales:
+**Fotografías de referencia (stock gratuito, no son de Nossa Pizza)** —
+se usan como marcador visual de calidad mientras no haya fotografía propia
+de esos elementos. Todas llevan `— foto de referencia, pendiente de
+sustituir por la propia` en su `alt`, para que quede documentado en el
+propio código:
 
-```
-assets/images/placeholders/pizza-calabresa-placeholder.svg
-assets/images/placeholders/pizza-roll-placeholder.svg
-```
+| Foto | Dónde se usa |
+|---|---|
+| `assets/images/pizza-calabresa.jpg` | Tarjeta "Calabresa" del menú, galería |
+| `assets/images/chef-oven.jpg` | Sección "Calidad e ingredientes", galería |
+| `assets/images/pizza-margherita.jpg` | Galería |
+| `assets/images/pizza-olives.jpg` | (disponible en `assets/images/`, aún sin usar) |
 
-Cuando las tengas, guárdalas en `assets/images/` (ej. `pizza-calabresa.jpg`,
-`pizza-roll.jpg`) y sustituye el `src` de esas dos imágenes en `index.html`
-(aparecen dos veces cada una: en la galería y en su tarjeta del menú).
+Cuando tengas fotografía real de tu pizza de calabresa, tu horno o tu
+local, sustituye el `src` correspondiente en `index.html` — cada foto de
+referencia aparece en 1-2 sitios, fácil de localizar buscando el nombre de
+archivo.
 
-> Nota: en la carpeta `assets/images/` llegó también un archivo `.zip` con
-> capturas de pantalla de la web de otra pizzería ("BRACE — Stone-Fired
-> Napolitan Pizza"), aparentemente como referencia de diseño para el
-> selector de tamaños/extras. No pertenecen a Nossa Pizza, así que no se han
-> usado como contenido del sitio (ni sus precios, que son de otra marca) y
-> se han retirado del repositorio.
+**Aún falta** una foto para el **rocambole de jamón y queso** — al ser una
+pieza enrollada (no una pizza redonda), ninguna de las fotos de stock que
+enviaste correspondía a la forma real del producto, así que de momento
+sigue con una ilustración vectorial provisional:
+`assets/images/placeholders/pizza-roll-placeholder.svg`.
+
+> Nota sobre archivos retirados: llegaron varios `.zip` a `assets/images/`
+> a lo largo de la conversación con capturas de pantalla de otras webs
+> (una pizzería llamada "BRACE") y con búsquedas de Google Images /
+> bancos de stock que incluían fotos con derechos de autor de terceros y
+> el escaparate real de otro restaurante ("Allô Pizza"). Ninguno de esos
+> archivos se ha usado como contenido de Nossa Pizza y se han retirado del
+> repositorio; solo se conservaron las fotos de stock genéricas (sin marca
+> de otro negocio) listadas arriba.
 
 ## 2. Precios
 

@@ -1,32 +1,32 @@
 /* =========================================================
    NOSSA PIZZA — hoja de estilos principal
-   Paleta artesanal cálida: marrón oscuro + crema + beige +
-   terracota, con verde oliva y dorado como acentos secundarios.
-   Los nombres de variable heredados (--navy, --orange, etc.) se
-   mantienen para no romper el resto de la hoja, pero ahora
-   apuntan a la nueva paleta marrón/terracota.
+   Paleta editorial oscura y premium: negro casi puro + blanco
+   cálido + un acento "brasa" (naranja-rojo intenso) y dorado
+   como detalle secundario. Los nombres de variable heredados
+   (--navy, --orange, etc.) se mantienen para no romper el resto
+   de la hoja, pero ahora apuntan a la nueva paleta oscura.
    ========================================================= */
 
 :root {
-  --navy: #7a4b32;          /* marrón medio */
-  --navy-deep: #4a2c20;     /* marrón oscuro principal */
-  --charcoal: #2a1b12;      /* espresso oscuro — fondos foto/hero */
-  --charcoal-soft: #3a2418; /* marrón footer */
-  --orange: #b85c38;        /* terracota — CTA principal */
-  --orange-deep: #98492c;   /* terracota oscuro — hover */
-  --red: #a8452c;
-  --gold: #c49a5a;          /* dorado suave, detalles */
+  --navy: #423b35;          /* gris cálido medio — acentos intermedios */
+  --navy-deep: #14110f;     /* negro cálido — texto principal y fondos oscuros */
+  --charcoal: #0b0908;      /* negro profundo — fondos de foto/hero */
+  --charcoal-soft: #1a1613; /* negro suave — footer */
+  --orange: #e35b1f;        /* brasa — CTA principal */
+  --orange-deep: #b8430f;   /* brasa oscura — hover */
+  --red: #c0392b;
+  --gold: #cda45e;          /* dorado — detalles premium */
   --crust: #d9a45c;
-  --cream: #fff9f2;         /* blanco cálido */
-  --cream-dim: #e8d5be;     /* beige claro */
-  --cream-soft: #f6ebdd;    /* crema */
-  --olive: #66704a;         /* verde oliva — acento secundario */
-  --ink: #29231f;           /* negro suave para textos */
+  --cream: #f7f3ec;         /* blanco cálido */
+  --cream-dim: #cdbfae;     /* taupe claro — texto secundario sobre oscuro */
+  --cream-soft: #f1ece3;    /* crema suave */
+  --olive: #545a3f;         /* verde oliva oscuro — acento secundario */
+  --ink: #1c1815;           /* negro cálido para texto sobre fondo claro */
   --green-br: #049a3f;
   --yellow-br: #ffd400;
   --blue-br: #002776;
 
-  --font-display: "Baloo 2", "Fraunces", sans-serif;
+  --font-display: "Italiana", "Fraunces", serif;
   --font-heading: "Fraunces", Georgia, serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 
@@ -95,8 +95,8 @@ button { font: inherit; cursor: pointer; }
   transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), background 0.25s var(--ease), color 0.25s var(--ease);
   white-space: nowrap;
 }
-.btn-primary { background: var(--orange); color: #fff; box-shadow: 0 12px 24px -10px rgba(184, 92, 56, 0.6); }
-.btn-primary:hover { background: var(--orange-deep); transform: translateY(-2px); box-shadow: 0 16px 30px -10px rgba(184, 92, 56, 0.7); }
+.btn-primary { background: var(--orange); color: #fff; box-shadow: 0 12px 24px -10px rgba(227, 91, 31, 0.6); }
+.btn-primary:hover { background: var(--orange-deep); transform: translateY(-2px); box-shadow: 0 16px 30px -10px rgba(227, 91, 31, 0.7); }
 .btn-outline-light { border-color: rgba(255,255,255,0.65); color: #fff; }
 .btn-outline-light:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); }
 .btn-outline { border-color: var(--navy); color: var(--navy); }
@@ -118,7 +118,7 @@ button { font: inherit; cursor: pointer; }
   padding-block: 18px;
 }
 .site-header.scrolled {
-  background: rgba(74, 44, 32, 0.94);
+  background: rgba(20, 17, 15, 0.94);
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 24px -12px rgba(0,0,0,0.35);
 }
@@ -126,7 +126,15 @@ button { font: inherit; cursor: pointer; }
 
 .logo { display: flex; align-items: center; gap: 10px; }
 .logo-mark { display: flex; }
-.logo-text { font-family: var(--font-display); font-weight: 700; font-size: 1.4rem; display: flex; gap: 4px; }
+.logo-text {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: flex;
+  gap: 0.32em;
+}
 .logo-nossa { color: var(--cream); }
 .logo-pizza { color: var(--orange); }
 
@@ -188,8 +196,16 @@ button { font: inherit; cursor: pointer; }
 .nav-toggle span { width: 24px; height: 2px; background: var(--cream); border-radius: 2px; transition: transform 0.25s var(--ease), opacity 0.25s var(--ease), background 0.25s var(--ease); }
 
 /* ---------- Hero ---------- */
-.hero {
+/* Bounds the sticky hero's containing block to ~1.5 viewports, so it pins
+   for a beat then properly releases instead of sticking for the whole page. */
+.hero-stack-wrap {
   position: relative;
+  height: 150svh;
+}
+.hero {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   min-height: 100svh;
   display: flex;
   align-items: center;
@@ -198,13 +214,21 @@ button { font: inherit; cursor: pointer; }
   overflow: hidden;
   background: var(--charcoal);
 }
+/* Sits after the sticky hero and, being a positioned element later in the
+   DOM, slides up over it as the user scrolls — the "cards stacking" reveal. */
+.stack-cover {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 -40px 60px -30px rgba(0,0,0,0.5);
+}
+
 .hero-bg {
   position: absolute;
   top: -60px; right: 0; bottom: -60px; left: 0;
   background:
-    radial-gradient(circle at 82% 20%, rgba(184,92,56,0.28), transparent 55%),
-    radial-gradient(circle at 12% 82%, rgba(74,44,32,0.55), transparent 55%),
-    linear-gradient(160deg, #3a2418 0%, #2a1b12 55%, #1c120b 100%);
+    radial-gradient(circle at 82% 20%, rgba(227,91,31,0.28), transparent 55%),
+    radial-gradient(circle at 12% 82%, rgba(20,17,15,0.55), transparent 55%),
+    linear-gradient(160deg, #1a1613 0%, #0b0908 55%, #050403 100%);
 }
 .hero-inner {
   position: relative;
@@ -253,7 +277,7 @@ button { font: inherit; cursor: pointer; }
 .hero-glow {
   position: absolute;
   width: 420px; height: 420px;
-  background: radial-gradient(circle, rgba(196,154,90,0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(205,164,94,0.35), transparent 70%);
   filter: blur(10px);
   animation: pulse-glow 6s ease-in-out infinite;
 }
@@ -325,7 +349,7 @@ button { font: inherit; cursor: pointer; }
 .split-visual { position: relative; display: flex; justify-content: center; }
 .mascot-frame {
   width: min(280px, 70vw);
-  background: linear-gradient(160deg, rgba(196,154,90,0.18), rgba(184,92,56,0.08));
+  background: linear-gradient(160deg, rgba(205,164,94,0.18), rgba(227,91,31,0.08));
   border-radius: var(--radius-lg);
   padding: 26px;
 }
@@ -371,22 +395,13 @@ button { font: inherit; cursor: pointer; }
   font-weight: 600;
 }
 .ingredient-icons li span { font-size: 1.1rem; }
-.quality-visual { min-height: 320px; }
-.pizza-disc {
-  width: min(320px, 80vw);
-  aspect-ratio: 1;
-  border-radius: 50%;
+.quality-visual { min-height: 320px; display: flex; justify-content: center; }
+.quality-photo {
+  width: min(420px, 90vw);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
-}
-.pizza-disc--calabresa {
-  background:
-    radial-gradient(circle at 30% 28%, rgba(255,255,255,0.55) 0 6%, transparent 7%),
-    radial-gradient(circle at 62% 55%, rgba(255,255,255,0.55) 0 5%, transparent 6%),
-    radial-gradient(circle at 42% 68%, rgba(255,255,255,0.55) 0 5%, transparent 6%),
-    radial-gradient(circle at 70% 25%, #8c3226 0 9%, transparent 10%),
-    radial-gradient(circle at 28% 50%, #8c3226 0 9%, transparent 10%),
-    radial-gradient(circle at 55% 40%, #8c3226 0 9%, transparent 10%),
-    radial-gradient(circle at 50% 50%, var(--gold), var(--crust) 75%, var(--orange-deep) 100%);
 }
 
 .price { font-family: var(--font-heading); font-weight: 700; color: var(--navy-deep); }
@@ -592,7 +607,7 @@ button { font: inherit; cursor: pointer; }
   color: #fff;
   border: none;
   font-size: 1.5rem;
-  box-shadow: 0 14px 30px -10px rgba(184,92,56,0.6);
+  box-shadow: 0 14px 30px -10px rgba(227,91,31,0.6);
   display: flex; align-items: center; justify-content: center;
   transition: transform 0.25s var(--ease);
 }
@@ -738,7 +753,7 @@ button { font: inherit; cursor: pointer; }
 /* ---------- Pedidos ---------- */
 .pedidos-cta {
   background:
-    radial-gradient(circle at 15% 20%, rgba(196,154,90,0.18), transparent 55%),
+    radial-gradient(circle at 15% 20%, rgba(205,164,94,0.18), transparent 55%),
     linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
   color: var(--cream);
   text-align: center;

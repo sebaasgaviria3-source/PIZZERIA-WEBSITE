@@ -28,7 +28,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Italiana&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -94,6 +94,7 @@
 <main id="main-content">
 
 <!-- ===================== HERO ===================== -->
+<div class="hero-stack-wrap">
 <section class="hero" id="inicio">
   <div class="hero-bg parallax" id="hero-parallax" aria-hidden="true"></div>
   <div class="container hero-inner">
@@ -125,9 +126,10 @@
     <span></span>
   </a>
 </section>
+</div>
 
 <!-- ===================== NUESTRA HISTORIA ===================== -->
-<section class="section section-dark" id="historia">
+<section class="section section-dark stack-cover" id="historia">
   <div class="container split">
     <div class="split-visual reveal">
       <img src="assets/images/mascot-chef.jpg" alt="El chef de Nossa Pizza, con gorro y bigote, uniforme blanco con la bandera de Brasil" width="921" height="1152" loading="lazy" class="mascot-frame">
@@ -173,7 +175,7 @@
       </ul>
     </div>
     <div class="split-visual reveal quality-visual" style="--delay:120ms">
-      <div class="quality-disc pizza-disc pizza-disc--calabresa" role="img" aria-label="Detalle de ingredientes: calabresa, cebolla y queso — composición provisional"></div>
+      <img src="assets/images/chef-oven.jpg" alt="Pizzero horneando en horno de leña — foto de referencia, pendiente de sustituir por la propia" width="738" height="680" loading="lazy" class="quality-photo">
     </div>
   </div>
 </section>
@@ -253,9 +255,17 @@
         <img src="assets/images/placeholders/pizza-roll-placeholder.svg" alt="Rocambole de pizza con jamón y queso — foto provisional" loading="lazy" width="400" height="300">
         <span class="gallery-caption">Rocambole de jamón y queso</span>
       </button>
-      <button class="gallery-item reveal" style="--delay:240ms" data-full="assets/images/placeholders/pizza-calabresa-placeholder.svg" data-caption="Pizza de calabresa con cebolla">
-        <img src="assets/images/placeholders/pizza-calabresa-placeholder.svg" alt="Pizza de calabresa con cebolla — foto provisional" loading="lazy" width="400" height="400">
+      <button class="gallery-item reveal" style="--delay:240ms" data-full="assets/images/pizza-calabresa.jpg" data-caption="Pizza de calabresa con cebolla">
+        <img src="assets/images/pizza-calabresa.jpg" alt="Pizza de calabresa con queso fundido — foto de referencia, pendiente de sustituir por la propia" loading="lazy" width="738" height="454">
         <span class="gallery-caption">Pizza de calabresa con cebolla</span>
+      </button>
+      <button class="gallery-item reveal" style="--delay:280ms" data-full="assets/images/chef-oven.jpg" data-caption="Horneado artesanal">
+        <img src="assets/images/chef-oven.jpg" alt="Pizzero horneando en horno de leña — foto de referencia, pendiente de sustituir por la propia" loading="lazy" width="738" height="680">
+        <span class="gallery-caption">Horneado artesanal</span>
+      </button>
+      <button class="gallery-item reveal" style="--delay:320ms" data-full="assets/images/pizza-margherita.jpg" data-caption="Toque final antes de hornear">
+        <img src="assets/images/pizza-margherita.jpg" alt="Pizza recién horneada terminándose con albahaca fresca — foto de referencia, pendiente de sustituir por la propia" loading="lazy" width="738" height="845">
+        <span class="gallery-caption">Toque final antes de hornear</span>
       </button>
       <div class="gallery-item gallery-item--empty reveal" style="--delay:300ms">
         <span aria-hidden="true">＋</span>
@@ -336,7 +346,7 @@
       <article class="product-card reveal" style="--delay:80ms" data-category="clasicas">
         <div class="product-card-media">
           <span class="product-cat-tag">Clásica</span>
-          <img src="assets/images/placeholders/pizza-calabresa-placeholder.svg" alt="Pizza de calabresa (embutido ahumado brasileño) con cebolla y queso mozzarella — foto provisional" width="400" height="400" loading="lazy">
+          <img src="assets/images/pizza-calabresa.jpg" alt="Pizza de calabresa (embutido ahumado brasileño) con cebolla y queso mozzarella — foto de referencia, pendiente de sustituir por la propia" width="738" height="454" loading="lazy">
         </div>
         <div class="product-card-body" data-product="Pizza de Calabresa com Cebola">
           <h3>Pizza de Calabresa com Cebola</h3>
