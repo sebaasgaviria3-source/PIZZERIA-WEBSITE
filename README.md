@@ -1,4 +1,4 @@
-# Nossa Pizza
+# TABOM Pizza
 
 Sitio web profesional para **Nossa Pizza**, pizzería artesanal de inspiración
 brasileña. Es un sitio estático (HTML + CSS + JavaScript, sin build ni
