@@ -51,7 +51,7 @@
   }
 
   /* ---------------- Cart state ---------------- */
-  var CART_KEY = "nossapizza_cart_v1";
+  var CART_KEY = "tabompizza_cart_v1";
   var cartItems = [];
   var cartIdCounter = 0;
   try {
@@ -96,7 +96,7 @@
   }
 
   function buildWhatsAppLink() {
-    var lines = ["Hola, quiero hacer este pedido en Nossa Pizza:", ""];
+    var lines = ["Hola, quiero hacer este pedido en Ta Bom Pizza:", ""];
     if (!cartItems.length) {
       lines.push("(Aún no he añadido productos — quiero más información sobre el menú)");
     } else {

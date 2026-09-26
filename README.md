@@ -1,6 +1,6 @@
 # TABOM Pizza
 
-Sitio web profesional para **Nossa Pizza**, pizzería artesanal de inspiración
+Sitio web profesional para **Ta Bom Pizza**, pizzería artesanal de inspiración
 brasileña. Es un sitio estático (HTML + CSS + JavaScript, sin build ni
 dependencias) listo para publicar en cualquier hosting estático.
 

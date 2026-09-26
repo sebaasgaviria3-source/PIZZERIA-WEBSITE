@@ -1,5 +1,5 @@
 /* =========================================================
-   NOSSA PIZZA — hoja de estilos principal
+   TA BOM PIZZA — hoja de estilos principal
    Paleta editorial oscura y premium: negro casi puro + blanco
    cálido + un acento "brasa" (naranja-rojo intenso) y dorado
    como detalle secundario. Los nombres de variable heredados
@@ -135,7 +135,7 @@ button { font: inherit; cursor: pointer; }
   display: flex;
   gap: 0.32em;
 }
-.logo-nossa { color: var(--cream); }
+.logo-brand { color: var(--cream); }
 .logo-pizza { color: var(--orange); }
 
 .main-nav ul { display: flex; gap: 28px; }

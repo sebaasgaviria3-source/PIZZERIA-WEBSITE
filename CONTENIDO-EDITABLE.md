@@ -1,4 +1,4 @@
-# Contenido pendiente de editar — Nossa Pizza
+# Contenido pendiente de editar — Ta Bom Pizza
 
 Este documento reúne **todo lo que falta por confirmar** en la web. No se ha
 inventado ningún precio, ingrediente, dato de contacto ni reseña — todo lo
@@ -10,15 +10,15 @@ o un comentario `<!-- EDITAR: ... -->`, así que puedes buscarlos con Ctrl+F.
 
 ## 1. Fotografías
 
-**Fotos reales de Nossa Pizza** (las que subiste tú, ya integradas):
+**Fotos reales de Ta Bom Pizza** (las que subiste tú, ya integradas):
 
 | Foto | Dónde se usa |
 |---|---|
 | `assets/images/pizza-goiabada.jpg` | Portada (hero), tarjeta "Goiabada" del menú, galería, imagen para compartir en redes (Open Graph) |
 | `assets/images/mascot-chef.jpg` | Sección "Nuestra historia", distintivo "100% artesanal" del hero, galería |
-| `assets/images/logo-nossa-pizza.jpg` | Galería (identidad de marca) |
+| `assets/images/logo-nossa-pizza.jpg` | Galería (identidad de marca) — **es el logotipo antiguo "Nossa Pizza"; pendiente de sustituir por el logo de Ta Bom Pizza** |
 
-**Fotografías de referencia (stock gratuito, no son de Nossa Pizza)** —
+**Fotografías de referencia (stock gratuito, no son de Ta Bom Pizza)** —
 se usan como marcador visual de calidad mientras no haya fotografía propia
 de esos elementos. Todas llevan `— foto de referencia, pendiente de
 sustituir por la propia` en su `alt`, para que quede documentado en el
@@ -47,13 +47,13 @@ sigue con una ilustración vectorial provisional:
 > (una pizzería llamada "BRACE") y con búsquedas de Google Images /
 > bancos de stock que incluían fotos con derechos de autor de terceros y
 > el escaparate real de otro restaurante ("Allô Pizza"). Ninguno de esos
-> archivos se ha usado como contenido de Nossa Pizza y se han retirado del
+> archivos se ha usado como contenido de Ta Bom Pizza y se han retirado del
 > repositorio; solo se conservaron las fotos de stock genéricas (sin marca
 > de otro negocio) listadas arriba.
 
 ## 2. Precios
 
-No se ha facilitado ninguna lista de precios de Nossa Pizza, así que **todo
+No se ha facilitado ninguna lista de precios de Ta Bom Pizza, así que **todo
 el sistema de tamaños y extras del menú funciona con precios en blanco**
 (`data-price=""`). Mientras estén vacíos, la web es honesta al respecto: en
 vez de mostrar un precio inventado, muestra **"Precio pendiente"**.
@@ -82,7 +82,7 @@ Lo mismo aplica a los extras (`data-price=""` en cada casilla).
 Se han preparado 3 tamaños por pizza (Pequeña 25 cm / Mediana 30 cm / Grande
 35 cm) y 2 raciones para el rocambole (Individual / Para compartir) como
 **estructura de ejemplo**, ya que no se indicaron los tamaños reales de
-Nossa Pizza. Edita las etiquetas (`Pequeña`, `25 cm`, etc.) en `index.html`
+Ta Bom Pizza. Edita las etiquetas (`Pequeña`, `25 cm`, etc.) en `index.html`
 si tus tamaños reales son distintos.
 
 ## 4. Bebidas, postres y nuevas pizzas
@@ -142,7 +142,7 @@ unos términos y condiciones redactados (idealmente con asesoría legal).
 ## 9. SEO / dominio
 
 `index.html` incluye un `<link rel="canonical">` y metaetiquetas Open Graph
-con el dominio de ejemplo `https://www.nossapizza.example/`. Sustitúyelo por
+con el dominio de ejemplo `https://www.tabompizza.example/`. Sustitúyelo por
 el dominio real cuando la web esté publicada. El bloque `Restaurant`
 (`application/ld+json`) también tiene dirección y teléfono de ejemplo.
 
